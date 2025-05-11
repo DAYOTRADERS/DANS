@@ -9,9 +9,8 @@
   NPM_VERSION = "9.8.1"
   NODE_OPTIONS = "--max_old_space_size=4096"
 
-# Remove Next.js plugin since we're using Rsbuild
-# [[plugins]]
-#   package = "@netlify/plugin-nextjs"
-
 [functions]
   node_bundler = "esbuild"
+
+# [[plugins]]
+#   package = "@netlify/plugin-nextjs"
