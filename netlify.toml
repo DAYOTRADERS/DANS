@@ -1,16 +1,16 @@
 ﻿[build]
-  base = "."
-  command = "npm run build"
-  publish = "dist"
-  ignoreSubmodules = true
+base = "."
+command = "npm run build"
+publish = "dist"
+ignoreSubmodules = true
 
 [build.environment]
-  NODE_VERSION = "18.19.1"
-  NPM_VERSION = "9.8.1"
-  NODE_OPTIONS = "--max_old_space_size=4096"
+NODE_VERSION = "18.19.1"
+NPM_VERSION = "9.8.1"
+NODE_OPTIONS = "--max_old_space_size=4096"
 
 [functions]
-  node_bundler = "esbuild"
+node_bundler = "esbuild"
 
 # [[plugins]]
 #   package = "@netlify/plugin-nextjs"
