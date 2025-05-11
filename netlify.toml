@@ -1,14 +1,17 @@
-[build]
+﻿[build]
   base = "."
   command = "npm run build"
   publish = "dist"
-  ignoreSubmodules = true  # This prevents submodule checkout attempts
+  ignoreSubmodules = true
 
 [build.environment]
   NODE_VERSION = "18.19.1"
   NPM_VERSION = "9.8.1"
   NODE_OPTIONS = "--max_old_space_size=4096"
-  GIT_SUBMODULE_STRATEGY = "none"  # Explicitly disable submodules
+
+# Remove Next.js plugin since we're using Rsbuild
+# [[plugins]]
+#   package = "@netlify/plugin-nextjs"
 
 [functions]
   node_bundler = "esbuild"
