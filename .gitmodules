@@ -1,3 +1,5 @@
 ﻿[submodule "src"]
     path = src
-    url = https://github.com/original/repo.git
+    url = git@github.com:original/repo.git  # Changed to SSH format
+    # Alternative if you must use HTTPS:
+    # url = https://github.com/original/repo.git
